@@ -12,7 +12,7 @@
 ; understand the '[LangOptions] section' topic in the help file.
 LanguageName=Espa<00F1>ol
 LanguageID=$0c0a
-LanguageCodePage=65001
+LanguageCodePage=1252
 ; If the language you are translating to requires special font faces or
 ; sizes, uncomment any of the following entries and change them accordingly.
 ;DialogFontName=
@@ -54,7 +54,7 @@ WindowsVersionNotSupported=Este programa no es compatible con la versión de Win
 WindowsServicePackRequired=Este programa requiere %1 Service Pack %2 o posterior.
 NotOnThisPlatform=Este programa no se ejecutará en %1.
 OnlyOnThisPlatform=Este programa debe ejecutarse en %1.
-OnlyOnTheseArchitectures=Este programa sólo puede instalarse en versiones de Windows diseñadas para las siguientes arquitecturas de procesadores:%n%n%1
+OnlyOnTheseArchitectures=Este programa solo puede instalarse en versiones de Windows diseñadas para las siguientes arquitecturas de procesadores:%n%n%1
 WinVersionTooLowError=Este programa requiere %1 versión %2 o posterior.
 WinVersionTooHighError=Este programa no puede instalarse en %1 versión %2 o posterior.
 AdminPrivilegesRequired=Debe iniciar la sesión como administrador para instalar este programa.
@@ -73,8 +73,8 @@ PrivilegesRequiredOverrideCurrentUser=Instalar para &mí solamente
 PrivilegesRequiredOverrideCurrentUserRecommended=Instalar para &mí solamente (recomendado)
 
 ; *** Misc. errors
-ErrorCreatingDir=El programa de instalación no pudo crear la carpeta "%1"
-ErrorTooManyFilesInDir=Imposible crear un archivo en la carpeta "%1" porque contiene demasiados archivos
+ErrorCreatingDir=El programa de instalación no pudo crear la carpeta «%1»
+ErrorTooManyFilesInDir=Imposible crear un archivo en la carpeta «%1» porque contiene demasiados archivos
 
 ; *** Setup common messages
 ExitSetupTitle=Salir de la Instalación
@@ -156,7 +156,7 @@ CannotInstallToUNCPath=El programa de instalación no puede realizar la instalac
 InvalidPath=Debe introducir una ruta completa con la letra de la unidad; por ejemplo:%n%nC:\APP%n%no una ruta de acceso UNC de la siguiente forma:%n%n\\servidor\compartido
 InvalidDrive=La unidad o ruta de acceso UNC que seleccionó no existe o no es accesible. Por favor, seleccione otra.
 DiskSpaceWarningTitle=Espacio Insuficiente en Disco
-DiskSpaceWarning=La instalación requiere al menos %1 KB de espacio libre, pero la unidad seleccionada sólo cuenta con %2 KB disponibles.%n%n¿Desea continuar de todas formas?
+DiskSpaceWarning=La instalación requiere al menos %1 kB de espacio libre, pero la unidad seleccionada solo cuenta con %2 kB disponibles.%n%n¿Desea continuar de todas formas?
 DirNameTooLong=El nombre de la carpeta o la ruta son demasiado largos.
 InvalidDirName=El nombre de la carpeta no es válido.
 BadDirName32=Los nombres de carpetas no pueden incluir los siguientes caracteres:%n%n%1
@@ -175,7 +175,7 @@ CompactInstallation=Instalación Compacta
 CustomInstallation=Instalación Personalizada
 NoUninstallWarningTitle=Componentes Encontrados
 NoUninstallWarning=El programa de instalación ha detectado que los siguientes componentes ya están instalados en su sistema:%n%n%1%n%nDesmarcar estos componentes no los desinstalará.%n%n¿Desea continuar de todos modos?
-ComponentSize1=%1 KB
+ComponentSize1=%1 kB
 ComponentSize2=%1 MB
 ComponentsDiskSpaceMBLabel=La selección actual requiere al menos [mb] MB de espacio en disco.
 
@@ -241,7 +241,7 @@ RunEntryShellExec=Ver %1
 ChangeDiskTitle=El Programa de Instalación Necesita el Siguiente Disco
 SelectDiskLabel2=Por favor, inserte el Disco %1 y haga clic en Aceptar.%n%nSi los archivos pueden ser hallados en una carpeta diferente a la indicada abajo, introduzca la ruta correcta o haga clic en Examinar.
 PathLabel=&Ruta:
-FileNotInDir2=El archivo "%1" no se ha podido hallar en "%2". Por favor, inserte el disco correcto o seleccione otra carpeta.
+FileNotInDir2=El archivo «%1» no se ha podido hallar en «%2». Por favor, inserte el disco correcto o seleccione otra carpeta.
 SelectDirectoryLabel=Por favor, especifique la ubicación del siguiente disco.
 
 ; *** Installation phase messages
@@ -277,15 +277,15 @@ ErrorRegCreateKey=Error al crear la clave del registro:%n%1\%2
 ErrorRegWriteKey=Error al escribir la clave del registro:%n%1\%2
 
 ; *** INI errors
-ErrorIniEntry=Error al crear entrada INI en el archivo "%1".
+ErrorIniEntry=Error al crear entrada INI en el archivo «%1».
 
 ; *** File copying errors
 FileAbortRetryIgnoreSkipNotRecommended=&Omitir este archivo (no recomendado)
 FileAbortRetryIgnoreIgnoreNotRecommended=&Ignorar el error y continuar (no recomendado)
 SourceIsCorrupted=El archivo de origen está dañado
-SourceDoesntExist=El archivo de origen "%1" no existe
-ExistingFileReadOnly2=El archivo existente no puede ser reemplazado debido a que está marcado como sólo-lectura.
-ExistingFileReadOnlyRetry=&Elimine el atributo de sólo-lectura y reintente
+SourceDoesntExist=El archivo de origen «%1» no existe
+ExistingFileReadOnly2=El archivo existente no puede ser reemplazado debido a que está marcado como solo-lectura.
+ExistingFileReadOnlyRetry=&Elimine el atributo de solo-lectura y reintente
 ExistingFileReadOnlyKeepExisting=&Mantener el archivo existente
 ErrorReadingExistingDest=Ocurrió un error mientras se intentaba leer el archivo:
 FileExists=El archivo ya existe.%n%n¿Desea sobreescribirlo?
@@ -314,18 +314,18 @@ ErrorOpeningReadme=Ocurrió un error al intentar abrir el archivo LÉAME.
 ErrorRestartingComputer=El programa de instalación no pudo reiniciar el equipo. Por favor, hágalo manualmente.
 
 ; *** Uninstaller messages
-UninstallNotFound=El archivo "%1" no existe. Imposible desinstalar.
-UninstallOpenError=El archivo "%1" no pudo ser abierto. Imposible desinstalar
-UninstallUnsupportedVer=El archivo de registro para desinstalar "%1" está en un formato no reconocido por esta versión del desinstalador. Imposible desinstalar
+UninstallNotFound=El archivo «%1» no existe. Imposible desinstalar.
+UninstallOpenError=El archivo «%1» no pudo ser abierto. Imposible desinstalar
+UninstallUnsupportedVer=El archivo de registro para desinstalar «%1» está en un formato no reconocido por esta versión del desinstalador. Imposible desinstalar
 UninstallUnknownEntry=Se encontró una entrada desconocida (%1) en el registro de desinstalación
 ConfirmUninstall=¿Está seguro que desea desinstalar completamente %1 y todos sus componentes?
-UninstallOnlyOnWin64=Este programa sólo puede ser desinstalado en Windows de 64-bits.
-OnlyAdminCanUninstall=Este programa sólo puede ser desinstalado por un usuario con privilegios administrativos.
+UninstallOnlyOnWin64=Este programa solo puede ser desinstalado en Windows de 64-bits.
+OnlyAdminCanUninstall=Este programa solo puede ser desinstalado por un usuario con privilegios administrativos.
 UninstallStatusLabel=Por favor, espere mientras %1 es desinstalado de su sistema.
 UninstalledAll=%1 se desinstaló satisfactoriamente de su sistema.
 UninstalledMost=La desinstalación de %1 ha sido completada.%n%nAlgunos elementos no pudieron eliminarse, pero podrá eliminarlos manualmente si lo desea.
 UninstalledAndNeedsRestart=Para completar la desinstalación de %1, su sistema debe reiniciarse.%n%n¿Desea reiniciarlo ahora?
-UninstallDataCorrupted=El archivo "%1" está dañado. No puede desinstalarse
+UninstallDataCorrupted=El archivo «%1» está dañado. No puede desinstalarse.
 
 ; *** Uninstallation phase messages
 ConfirmDeleteSharedFileTitle=¿Eliminar Archivo Compartido?
